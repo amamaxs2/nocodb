@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./telas/Login.tsx";
-import Formulario from "./telas/Formulario.tsx";
+import Login from "./telas/Login/Login.tsx";
+import Formulario from "./telas/Formulario/Formulario.tsx";
 
 const PrivateRoute = ({ children }: { children: JSX.Element }) => {
   const isAuthenticated = localStorage.getItem("auth") === "true";
